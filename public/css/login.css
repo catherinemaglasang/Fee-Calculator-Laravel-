@@ -1,0 +1,92 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+html {
+  height: 100%;
+}
+html body {
+  background: url(../images/trsbg.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  html body {
+    background: url(../images/trsbg.jpeg) no-repeat 60% 50%;
+    background-width: auto;
+  }
+}
+html body .container #login {
+  width: 450px;
+  margin-top: -175px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  color: #fff;
+}
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  html body .container #login {
+    width: 100%;
+    right: 0;
+  }
+}
+html body .container #login h1 {
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  html body .container #login h1 a img {
+    width: 90%;
+  }
+}
+html body .container #login form {
+  background: #3F6EA2;
+  margin-top: 20px;
+  padding: 26px 24px 26px;
+}
+html body .container #login form label {
+  color: #E9E9E9;
+  font-size: 14px;
+}
+html body .container #login form input[type=text],
+html body .container #login form input[type=password] {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 4px;
+  border: none;
+  margin-top: 4px;
+}
+html body .container #login form button {
+  border: 1px solid #0073aa;
+  float: right;
+  background: #626366;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+html body .container #login.login {
+  height: 426px;
+}
+html body .container #login.register {
+  height: 455px;
+}
+
+/*# sourceMappingURL=login.css.map */

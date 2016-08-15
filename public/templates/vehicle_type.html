@@ -1,0 +1,9 @@
+<div ng-if="fields.vehicle_type" class="form-group clearfix">
+  <label for="type">Vehicle Type*</label>
+  <div class="has-select">
+    <select name="type">
+      <option value="">Select</option>
+      <option v-repeat="class in clasification" value="@{{ $index }}">@{{ class.name }}</option>
+    </select>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div ng-if="fields.county" class="form-group clearfix">
+  <label for="county_name">Select County</label>
+  <div class="has-select">
+    <select name="county_name" ng-model="params.county">
+      <option value="">Select</option>
+      @foreach($data["counties"] as $county)
+        <option value="{{$county->name}}">{{$county->name}}</option>
+      @endforeach
+    </select>
+  </div>
+</div>

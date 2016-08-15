@@ -1,0 +1,12 @@
+<div ng-if="fields.model_year" class="form-group clearfix">
+  <label for="model_year">Model Year</label>
+          <div class="has-select">
+              <select name="model_year" ng-model="params.model_year">
+                  <option value="">Select</option>
+                  <!-- Rule: add 2 from the current year -->
+                  @foreach(range(date('Y')+2, 1900) as $year)
+                  <option value="{{$year}}">{{$year}}</option>
+                  @endforeach
+              </select>
+          </div>
+</div>

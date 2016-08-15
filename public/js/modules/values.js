@@ -1,0 +1,1 @@
+appModule.value({error: true});
